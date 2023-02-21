@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  upload-file-to-ec2:
+  upload-file-to-s3:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -28,5 +28,5 @@ jobs:
     - name: Upload files to s3
       run: |
         
-        aws s3 sync /build s3://frontend-p3-kevinzhou309 --recursive
+        aws s3 sync /build s3://frontend-p3-kevinzhou309
         
