@@ -21,6 +21,8 @@ jobs:
     - name: run npm install and npm run build
       run: |
         npm install
+        npm ci
+        npm run test
         npm run build
 
     - name: Upload files to s3
