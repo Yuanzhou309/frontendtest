@@ -26,5 +26,5 @@ jobs:
     - name: Upload files to s3
       run: |
         
-        aws s3 sync /build s3://mysamplebucket309
+        aws s3 sync /build s3://frontend-p3-kevinzhou309
         
